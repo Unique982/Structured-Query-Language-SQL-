@@ -1,0 +1,31 @@
+ 1. Database 
+ -> Database is intergrated collection of related informationalong with the details 
+ so that it a available to the serveral user for the differnet application
+
+ 2. Table/Entity
+ Table is the structure inside database that contains data organized in columns.
+
+ 3. Column/Field/Feature/Attributes
+ The name of each column in a table is used to interpret its meaning and is called an attributes.
+
+ 4. Row/Record/Tuple
+ -> Each row in a table represents a record and is called a tuple.
+
+ 5. Database Management System (DBMS)
+ -> DBMS is the software system that allows the access to the data in the database.
+
+ 6. Relational Database Management System (RDBMS)
+ -> RDBMS avoided the navigation model as in old DBMS and introduced relational model.
+ The realtional model has relationship between tables using primary keys,foreign keys indexes.
+ Thus the fetching and storing of data become faster than the old navigational model.
+ RDBMS is useful to efficiently manage vast amonut of data and is used in large business application
+
+ 7. Structured Query Language (SQL)
+ -> It is commonly used with all relational databsase for data definition and manipulation.
+ Features of SQL
+ 1.-> It is non procedural languages
+ 2.-> It is an english-like languages
+ 3.-> It can process a single record as well as set of records at a time.
+ 4.-> All SQL statement define what is to be done rather than how it is to be done
+ 5.-> SQL has facilities for defining database views, security, transaction etc.
+ 

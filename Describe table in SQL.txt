@@ -1,0 +1,14 @@
+// Describe table in SQL.txt
+ -> This is used to describe your table. DESC only describes structure of table not the information (rows)
+ inside table. DESC is short from of describe.
+ Syntax: DESC table_name
+ ex: desc student;
+ 
+ Output:
+ +---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(20) | YES  |     | NULL    |       |
+| roll    | int         | YES  |     | NULL    |       |
+| address | varchar(20) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+;

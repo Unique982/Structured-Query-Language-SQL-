@@ -1,0 +1,11 @@
+ 1. Create database
+ -> It is used to create database.
+ syntax: create database database_name;
+ ex: create database my_db;
+ (Query OK, 1 row affected (0.01 sec))-> Output
+
+ 2. Guidelines for creation of Database:
+ -> Name should start with an alphabet
+ -> Blank space and single quotes are not allowed 
+ -> Reserve words of that RDBMS/DBMS can not be used as database name
+ 

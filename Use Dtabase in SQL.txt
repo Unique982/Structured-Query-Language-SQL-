@@ -1,0 +1,5 @@
+ 1. Use Database 
+ -> This is used to tell your RDBMS/DBMS that you want to use this database.
+ syntax: USE database_name;
+ ex: use my_db;
+Database changed -> Output

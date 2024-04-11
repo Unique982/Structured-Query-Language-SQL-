@@ -1,0 +1,31 @@
+<-- Show Database and Table in SQL -->
+ SHOW DATABASES:-> THis command is used to view all the databases name.
+ Syntax: SHOW DATABASES;
+
+  Ex :show databases;
+
+  Output :
++--------------------+
+| Database           |
++--------------------+
+| dbms               |
+| information_schema |
+| lab_work           |
+| my_db              |
+| mysql              |       
+| performance_schema |
+| project            |
+| sakila             |               
+| world              |
++--------------------+
+
+. SHOW TABLES:-> This command is used to view all tables of currrent database;
+Syntax : SHOW TABLES;
+
+ex:  show tables;
+Output:
++-----------------+
+| Tables_in_my_db |
++-----------------+
+| student         |
++-----------------+
