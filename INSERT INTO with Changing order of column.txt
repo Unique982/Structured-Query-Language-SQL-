@@ -1,0 +1,17 @@
+// Changing order of column
+Syntax: INSERT INTO table_name(column2,column1,column4,column3)
+VALUES('value2', 'value1', 'value4','value3');
+
+ex: INSERT INTO student_reg (name,s_id,dob,address,fees) VALUES('HARI',10
+3,'2001-1-12','PKR',10000.52);
+
+Output:
+select * from student_reg;
++------+------+---------+------------+-----------+
+| s_id | name | address | dob        | fees      |
++------+------+---------+------------+-----------+
+|  101 | RAM  | KTM     | 1998-12-15 |   1000.23 |
+|  102 | SITA | KTM     | 2001-10-11 | 200000.12 |
+|  103 | HARI | PKR     | 2001-01-12 |  10000.52 |
++------+------+---------+------------+-----------+
+

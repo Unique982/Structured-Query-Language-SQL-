@@ -1,0 +1,15 @@
+// CHAR VARCHAR and TEXT Datatype in SQL
+1. CHAR or CHARACTER -> It holds a fixed lenght string (can contain letters, numbers, and special charaxters). The fixed size is specified in parethesis.
+It can store up to 255 characters.
+Syntax: column_name char(20)
+Ex: name chara(20);
+
+2. VARCHAR :-> It holds a variable length string(can contains letters, numbers, and special charaxters). the maximum size is specified in parethesis.
+it can store up to 255 characters.
+Note: If we put a greater value than 255 it will be converted to a text type.
+Syntax: column_name varchar(size);
+ex: name varchar(50);
+
+3. TEXT:-> It holds a string with a maximum lenght of 65.353 characters.
+syntax: column_name TEXT;
+Ex: address TEXT;

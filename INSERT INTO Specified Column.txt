@@ -1,0 +1,17 @@
+// Insert data only in specified columns
+
+Syntax: INSERT INTO table_name(column1,column2,column3)
+VALUES(value1,'value2','value3');
+
+Ex:  INSERT INTO student_reg(s_id,name,address,fees) VALUES(104,'BIMAl','KTM',1001.23);
+ 
+ Output:
+ select * from student_reg;
++------+-------+---------+------------+-----------+
+| s_id | name  | address | dob        | fees      |
++------+-------+---------+------------+-----------+
+|  101 | RAM   | KTM     | 1998-12-15 |   1000.23 |
+|  102 | SITA  | KTM     | 2001-10-11 | 200000.12 |
+|  103 | HARI  | PKR     | 2001-01-12 |  10000.52 |
+|  104 | BIMAl | KTM     | NULL       |   1001.23 |
++------+-------+---------+------------+-----------+

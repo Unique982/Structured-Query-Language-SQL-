@@ -1,0 +1,16 @@
+// INSERT INTO without specifying Column name
+
+synatx: INSERT INTO table_name VALUES (Value,Value2);
+Ex:INSERT INTO student_reg VALUES(102,'SITA','KTM','2001-10-11',200000.12);
+Output:
+ select * from student_reg;
++------+------+---------+------------+-----------+
+| s_id | name | address | dob        | fees      |
++------+------+---------+------------+-----------+
+|  101 | RAM  | KTM     | 1998-12-15 |   1000.23 |
+|  102 | SITA | KTM     | 2001-10-11 | 200000.12 |
++------+------+---------+------------+-----------+
+
+Rules:-
+.-> The values order should be same as column
+.-> We need to insert record for each column we can not leave any column.
