@@ -1,0 +1,17 @@
+//Single Quotes problem in SQL
+INSERT INTO table_name(id,c_name,address) VALUES(1,'un'i testing','np');
+There are two  way to solve this problem
+1.-> Use backslash
+ex:'un'\i testing'
+2.-> Use two time single Quotes
+ex: 'un''i testing'
+
+ex: insert into student (name,roll,address)VALUES('U\'I Testing',101,'Ktm
+');
+OutPut:
+select * from student;
++-------------+------+---------+
+| name        | roll | address |
++-------------+------+---------+
+| U'I Testing |  101 | Ktm     |
++-------------+------+---------+

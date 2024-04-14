@@ -1,0 +1,28 @@
+// WHERE
+-> is used to search for a specific data;
+1. Specifi data from all column
+Syntax: SELECT * FROM table_name WHERE column_name operators 'value';
+ex: SELECT * FROM student_reg WHERE s_id='102';
++------+------+---------+------------+-----------+
+| s_id | name | address | dob        | fees      |
++------+------+---------+------------+-----------+
+|  102 | SITA | KTM     | 2001-10-11 | 200000.12 |
++------+------+---------+------------+-----------+
+Note: Value can be text or numeric. if it is text then we have to put single quotes.
+
+
+SQL Comparison Operators
+Operator 	Description 	Example
+= 	Equal to 	
+> 	Greater than 	
+< 	Less than 	
+>= 	Greater than or equal to 	
+<= 	Less than or equal to 	
+<> 	Not equal to 
+<> or != Not equal
+BETWEEN  Between an inclusive range
+LIKE search for a pattern
+In To specifY MULTIPLE POSSIBLE VALUE OF A COLUMN	
+
+2. specific data from specific column
+Syntax: SELECT column_name From table_name WHERE column_name operator 'value';

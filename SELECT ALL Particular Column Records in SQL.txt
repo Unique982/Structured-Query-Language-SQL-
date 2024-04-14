@@ -1,0 +1,28 @@
+// select
+The SELECT statement is used to select data from a database and retrieve the information.
+1. SELECT ALL Columns from the table_name;
+Syntax: SELECT * FROM tbale_name;
+ex:select * from student_reg;
++------+---------+---------+------------+-----------+
+| s_id | name    | address | dob        | fees      |
++------+---------+---------+------------+-----------+
+|  101 | RAM     | KTM     | 1998-12-15 |   1000.23 |
+|  102 | SITA    | KTM     | 2001-10-11 | 200000.12 |
+|  103 | HARI    | PKR     | 2001-01-12 |  10000.52 |
+|  104 | BIMAl   | KTM     | NULL       |   1001.23 |
+|  105 | KAMAL   | PKR     | 1956-12-12 | 100000.12 |
+|  106 | SITA KC | PKR     | 1998-02-02 |  20000.12 |
++------+---------+---------+------------+-----------+
+2. Select Particular columns from the table
+Syntax: select column_name1,column_name2... from table;
+ex: select name,dob from student_reg;
++---------+------------+
+| name    | dob        |
++---------+------------+
+| RAM     | 1998-12-15 |
+| SITA    | 2001-10-11 |
+| HARI    | 2001-01-12 |
+| BIMAl   | NULL       |
+| KAMAL   | 1956-12-12 |
+| SITA KC | 1998-02-02 |
++---------+------------+

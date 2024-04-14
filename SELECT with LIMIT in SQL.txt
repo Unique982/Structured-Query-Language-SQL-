@@ -1,0 +1,12 @@
+//SELECT with LIMIT in SQL
+SELECT LIMIT is used to specify some number of records to display
+syntax: SELECT column_name1,column_name2 From table_name LIMIT recorde_number;
+ex: SELECT * FROM student_reg LIMIT 4;
++------+-------+---------+------------+-----------+
+| s_id | name  | address | dob        | fees      |
++------+-------+---------+------------+-----------+
+|  101 | RAM   | KTM     | 1998-12-15 |   1000.23 |
+|  102 | SITA  | KTM     | 2001-10-11 | 200000.12 |
+|  103 | HARI  | PKR     | 2001-01-12 |  10000.52 |
+|  104 | BIMAl | KTM     | NULL       |   1001.23 |
++------+-------+---------+------------+-----------+
