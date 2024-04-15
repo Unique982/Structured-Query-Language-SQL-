@@ -1,0 +1,33 @@
+// Between Number
+Syntax: SELECT * FROM table_name WHERE column_name BETWEEN value1 AND Value2;
+ex: SELECT * FROM student_reg WHERE s_id BETWEEN 102 AND 104;
++------+-------+---------+------------+-----------+
+| s_id | name  | address | dob        | fees      |
++------+-------+---------+------------+-----------+
+|  102 | SITA  | KTM     | 2001-10-11 | 200000.12 |
+|  103 | HARI  | PKR     | 2001-01-12 |  10000.52 |
+|  104 | BIMAl | KTM     | NULL       |   1001.23 |
++------+-------+---------+------------+-----------+
+
+// BETWEEN TEXT 
+syntax: SELECT * FROM table_name WHERE column_name BETWEEN 'value1' AND 'value2';
+ex: SELECT * FROM student_reg WHERE name BETWEEN 'A' AND 'K';
++------+-------+---------+------------+----------+
+| s_id | name  | address | dob        | fees     |
++------+-------+---------+------------+----------+
+|  103 | HARI  | PKR     | 2001-01-12 | 10000.52 |
+|  104 | BIMAl | KTM     | NULL       |  1001.23 |
++------+-------+---------+------------+----------+
+
+// BETWEEN DATE
+Syntax: SELECT * FROM table_name WHER column_name BETWEEN 'yyyy/mm/dd'
+Ex:SELECT * FROM student_reg WHERE dob BETWEEN '1998-12-15' AND '2001-10-12';
++------+------+---------+------------+-----------+
+| s_id | name | address | dob        | fees      |
++------+------+---------+------------+-----------+
+|  101 | RAM  | KTM     | 1998-12-15 |   1000.23 |
+|  102 | SITA | KTM     | 2001-10-11 | 200000.12 |
+|  103 | HARI | PKR     | 2001-01-12 |  10000.52 |
++------+------+---------+------------+-----------+
+
+//

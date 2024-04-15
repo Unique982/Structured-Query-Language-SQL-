@@ -1,0 +1,10 @@
+// In operator
+-> The In operator allows you to specify multiple value in a WHERE clause.
+Syntax: SELECT * FROM table_name WHERE column_name IN ('value1','value2');
+ex: SELECT * FROM student_reg  WHERE name IN ('HARI','SITA');
++------+------+---------+------------+-----------+
+| s_id | name | address | dob        | fees      |
++------+------+---------+------------+-----------+
+|  102 | SITA | KTM     | 2001-10-11 | 200000.12 |
+|  103 | HARI | PKR     | 2001-01-12 |  10000.52 |
++------+------+---------+------------+-----------+

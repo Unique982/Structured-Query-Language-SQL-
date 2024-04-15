@@ -1,0 +1,9 @@
+// AND 
+-> The AND operator display a record if both the first condition AND the second condition are ture.
+syntax: SELECT * FROM table_name WHERE column_name = 'Value' And column='value';
+Ex:  SELECT * FROM student_reg WHERE name='HARI' AND s_id =103;
++------+------+---------+------------+----------+
+| s_id | name | address | dob        | fees     |
++------+------+---------+------------+----------+
+|  103 | HARI | PKR     | 2001-01-12 | 10000.52 |
++------+------+---------+------------+----------+

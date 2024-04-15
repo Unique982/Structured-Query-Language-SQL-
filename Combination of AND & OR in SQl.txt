@@ -1,0 +1,8 @@
+// Combination of AND & OR
+syntax: SELECT * FROM table_name WHERE column_name='value' AND (column_name='value' OR column_name1 ='value');
+Ex: SELECT * FROM student_reg WHERE name='KAMAL' AND (s_id =105 OR dob='1998-02-02');
++------+-------+---------+------------+-----------+
+| s_id | name  | address | dob        | fees      |
++------+-------+---------+------------+-----------+
+|  105 | KAMAL | PKR     | 1956-12-12 | 100000.12 |
++------+-------+---------+------------+-----------+
