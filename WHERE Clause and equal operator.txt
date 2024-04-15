@@ -26,3 +26,9 @@ In To specifY MULTIPLE POSSIBLE VALUE OF A COLUMN
 
 2. specific data from specific column
 Syntax: SELECT column_name From table_name WHERE column_name operator 'value';
+Ex: SELECT * from student_reg WHERE name='SITA';
++------+------+---------+------------+-----------+
+| s_id | name | address | dob        | fees      |
++------+------+---------+------------+-----------+
+|  102 | SITA | KTM     | 2001-10-11 | 200000.12 |
++------+------+---------+------------+-----------+
