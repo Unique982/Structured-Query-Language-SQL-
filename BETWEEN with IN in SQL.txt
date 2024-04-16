@@ -1,0 +1,22 @@
+// BETWEEN with IN
+Syntax: SELET * FROM table_name WHERE (column_name BETWEEN value1 AND value2)AND column_name IN (value1 , value2);
+ex: SELECT * FROM student_reg WHERE (fees BETWEEN 1000 AND 20000) AND add
+ress IN ('KTM','PRK');
++------+-------+---------+------------+---------+
+| s_id | name  | address | dob        | fees    |
++------+-------+---------+------------+---------+
+|  101 | RAM   | KTM     | 1998-12-15 | 1000.23 |
+|  104 | BIMAl | KTM     | NULL       | 1001.23 |
++------+-------+---------+------------+---------+
+
+// OR 
+ex:  SELECT * FROM student_reg WHERE (fees BETWEEN 1000 AND 20000) OR addr
+ess IN ('KTM','PRK');
++------+-------+---------+------------+-----------+
+| s_id | name  | address | dob        | fees      |
++------+-------+---------+------------+-----------+
+|  101 | RAM   | KTM     | 1998-12-15 |   1000.23 |
+|  102 | SITA  | KTM     | 2001-10-11 | 200000.12 |
+|  103 | HARI  | PKR     | 2001-01-12 |  10000.52 |
+|  104 | BIMAl | KTM     | NULL       |   1001.23 |
++------+-------+---------+------------+-----------+

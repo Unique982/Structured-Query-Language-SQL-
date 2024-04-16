@@ -1,0 +1,64 @@
+// LIKE with % WildCard in SQL
+-> The Like operator is used to search for a specified pattern in a column.
+syntax: SELECT * FROM table_name WHERE column_name LIKE 'pattern';
+
+// Wild cards 
+-> Wild cards are used to search for data within a table. These characters are used with thr LIKE operator.
+% -> zero or more characters
+_ -> One single character
+[charlist] -> Sets and ranges of characters to match 
+[^charlist] or [!charlist] -> Matches only a character NOT specified within the brackets
+
+1. % -> zero or more characters
+'hello%' - all starting with hello Ex: hello testing
+ex:  SELECT * FROM student_reg WHERE name LIKE 'bi%';
++------+-------+---------+------+---------+
+| s_id | name  | address | dob  | fees    |
++------+-------+---------+------+---------+
+|  104 | BIMAl | KTM     | NULL | 1001.23 |
++------+-------+---------+------+---------+
+
+'%testing' - All ending with testing Ex: hello testing
+ex:SELECT * FROM student_reg WHERE name LIKE '%i';
++------+------+---------+------------+----------+
+| s_id | name | address | dob        | fees     |
++------+------+---------+------------+----------+
+|  103 | HARI | PKR     | 2001-01-12 | 10000.52 |
++------+------+---------+------------+----------+
+
+'%in%' - all containing with in ex: hello testing
+SELECT * FROM student_reg WHERE name LIKE '%ma%';
++------+-------+---------+------------+-----------+
+| s_id | name  | address | dob        | fees      |
++------+-------+---------+------------+-----------+
+|  104 | BIMAl | KTM     | NULL       |   1001.23 |
+|  105 | KAMAL | PKR     | 1956-12-12 | 100000.12 |
++------+-------+---------+------------+-----------+
+
+2. - one single character
+'testing_ -> '-starting with show then any character Ex testing
+Ex: SELECT * FROM student_reg WHERE s_id LIKE '10_';
++------+---------+---------+------------+-----------+
+| s_id | name    | address | dob        | fees      |
++------+---------+---------+------------+-----------+
+|  101 | RAM     | KTM     | 1998-12-15 |   1000.23 |
+|  102 | SITA    | KTM     | 2001-10-11 | 200000.12 |
+|  103 | HARI    | PKR     | 2001-01-12 |  10000.52 |
+|  104 | BIMAl   | KTM     | NULL       |   1001.23 |
+|  105 | KAMAL   | PKR     | 1956-12-12 | 100000.12 |
+|  106 | SITA KC | PKR     | 1998-02-02 |  20000.12 |
++------+---------+---------+------------+-----------+
+'_tin' -> ant charaxter the tin. Ex testing
+ex:SELECT * FROM student_reg WHERE s_id LIKE '_04';
++------+-------+---------+------+---------+
+| s_id | name  | address | dob  | fees    |
++------+-------+---------+------+---------+
+|  104 | BIMAl | KTM     | NULL | 1001.23 |
++------+-------+---------+------+---------+
+'t_s_g -> t then any character then s then any character, then g ex: testing
+ex: SELECT * FROM student_reg WHERE s_id LIKE '1_3';
++------+------+---------+------------+----------+
+| s_id | name | address | dob        | fees     |
++------+------+---------+------------+----------+
+|  103 | HARI | PKR     | 2001-01-12 | 10000.52 |
++------+------+---------+------------+----------+

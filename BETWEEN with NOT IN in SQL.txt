@@ -1,0 +1,11 @@
+// BETWEEN with NOT IN
+syntax: SELCET * FROM table_name WHERE (column_name BETWEEn value1 AND value2) AND 
+NOT column_name IN (value1, value2)
+
+Ex:select * from student_reg WHERE (fees  BETWEEN 1000 AND 20000) AND NOT s_id IN (101,105);
++------+-------+---------+------------+----------+
+| s_id | name  | address | dob        | fees     |
++------+-------+---------+------------+----------+
+|  103 | HARI  | PKR     | 2001-01-12 | 10000.52 |
+|  104 | BIMAl | KTM     | NULL       |  1001.23 |
++------+-------+---------+------------+----------+
