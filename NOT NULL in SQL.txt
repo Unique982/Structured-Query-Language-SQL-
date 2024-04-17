@@ -1,0 +1,20 @@
+// NOT NULL
+-> By default a tables column can hold NULL values.
+The NOT NULL constraint enforces a field to always contain a vlaue. This means that you cannot insert a new record, or update a record without 
+adding a value to this field.
+ex:create table example(name varchar (30),roll int (10), number int(10)
+NOT NULL);
+
+// output
+desc example;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| name   | varchar(30) | YES  |     | NULL    |       |
+| roll   | int         | YES  |     | NULL    |       |
+| number | int         | NO   |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+
+msg :  INSERT INTO example (name,roll) VALUES('Ram',10);
+ERROR 1364 (HY000): Field 'number' doesn't have a default value
+mysql>

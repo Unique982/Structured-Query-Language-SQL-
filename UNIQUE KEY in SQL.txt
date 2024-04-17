@@ -1,0 +1,24 @@
+// UNIQUE Key
+-> The UNIQUE constraint uniquely identifies each record in a database table.
+There can be many UNIQUE constraints per table. A Unique key column can contain NULL values.
+ex: CREATE TABLE example(s_id int (10) UNIQUE ,name varchar(50), roll_no
+int (10) UNIQUE  ,number int (10));
+
+output:desc example;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| s_id    | int         | YES  | UNI | NULL    |       |
+| name    | varchar(50) | YES  |     | NULL    |       |
+| roll_no | int         | YES  | UNI | NULL    |       |
+| number  | int         | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
+ex: insert into example (s_id,name,number) VALUES(2,'RAM',9888888);
+mysql> select * from example;
++------+------+---------+---------+
+| s_id | name | roll_no | number  |
++------+------+---------+---------+
+|    1 | RAM  |       1 | 9888888 |
+|    2 | RAM  |    NULL | 9888888 |
++------+------+---------+---------+

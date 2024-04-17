@@ -1,0 +1,22 @@
+// Auto increment 
+-> Auto increment is used to generate an unique number when a new record is inserted into a table.
+ex:create table staff ( s_id int(10) NOT NULL AUTO_INCREMENT,name varcha
+r (50), number int (10),PRIMARY KEY (s_id) );
+Query OK, 0 rows affected, 2 warnings (0.01 sec)
+
+mysql> desc staff;
++--------+-------------+------+-----+---------+----------------+
+| Field  | Type        | Null | Key | Default | Extra          |
++--------+-------------+------+-----+---------+----------------+
+| s_id   | int         | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(50) | YES  |     | NULL    |                |
+| number | int         | YES  |     | NULL    |                |
++--------+-------------+------+-----+---------+----------------+
+
+ex: INSERT INTO staff(name,number) VALUES ('Hari',4567890);
+mysql> select * from staff;
++------+------+---------+
+| s_id | name | number  |
++------+------+---------+
+|    1 | Hari | 4567890 |
++------+------+---------+

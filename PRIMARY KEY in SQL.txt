@@ -1,0 +1,16 @@
+// PRIMARY Key
+-> The PRIMARY KEY constraint uniquely identifies each record in a database table.
+Primaray keys must contains UNIQUE values. A primary key column cannot contain NULL values.
+Most tables should have a primary key, and each table can have only ONE primary key.
+syntax: CREATE TABLE example(s_id int (10) NOT NULL PRIMARY KEY ,name varchar
+(50), roll_no int (10) ,number int (10));
+ 
+ ex: desc example;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| s_id    | int         | NO   | PRI | NULL    |       |
+| name    | varchar(50) | YES  |     | NULL    |       |
+| roll_no | int         | YES  |     | NULL    |       |
+| number  | int         | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
