@@ -20,3 +20,24 @@ mysql> select * from staff;
 +------+------+---------+
 |    1 | Hari | 4567890 |
 +------+------+---------+
+
+// Auto Increament with a particular 
+ create table new(id int NOT NULL AUTO_INCREMENT PRIMARY KEY, name varchar(20));
+mysql> desc new;
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| id    | int         | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(20) | YES  |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+
+mysql> ALTER TABLE new AUTO_INCREMENT = 5;
+
+mysql> INSERT INTO new(name) VALUES('Hari');
+mysql> select * from new
+    -> ;
++----+------+
+| id | name |
++----+------+
+|  5 | Hari |
++----+------+
