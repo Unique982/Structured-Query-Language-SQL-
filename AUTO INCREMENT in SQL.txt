@@ -41,3 +41,17 @@ mysql> select * from new
 +----+------+
 |  5 | Hari |
 +----+------+
+
+
+// Auto INCREMENT without specifying column name
+ ex: INSERT INTO new VALUES(NULL,'testing');
+mysql> select * from new;
++----+---------+
+| id | name    |
++----+---------+
+|  5 | Hari    |
+|  6 | Ram     |
+|  7 | Sita    |
+|  8 | testing |
++----+---------+
+
