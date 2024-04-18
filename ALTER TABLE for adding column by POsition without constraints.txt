@@ -1,0 +1,32 @@
+ALTER TABLE for adding column by POsition without constraints
+Add Column By Position
+.-> Last (by default)
+.-> first
+.-> After
+
+// First
+syntax: ALTER TABLE table_name ADD COLUMN column_name datatype(size) FIRST;
+ex: ALTER TABLE new ADD COLUMN t_id int (10) FIRST;
+
+
+ex: select * from new;
++------+----+---------+---------+--------+
+| t_id | id | name    | address | number |
++------+----+---------+---------+--------+
+| NULL |  5 | Hari    | NULL    |   NULL |
+| NULL |  6 | Ram     | NULL    |   NULL |
+| NULL |  7 | Sita    | NULL    |   NULL |
+| NULL |  8 | testing | NULL    |   NULL |
++------+----+---------+---------+--------+
+
+// After
+ syntax: ALTER TABLE new ADD COLUMN t_number int (10) AFTER name ;
+:- mysql> select * from new;
++------+----+---------+----------+---------+--------+
+| t_id | id | name    | t_number | address | number |
++------+----+---------+----------+---------+--------+
+| NULL |  5 | Hari    |     NULL | NULL    |   NULL |
+| NULL |  6 | Ram     |     NULL | NULL    |   NULL |
+| NULL |  7 | Sita    |     NULL | NULL    |   NULL |
+| NULL |  8 | testing |     NULL | NULL    |   NULL |
++------+----+---------+----------+---------+--------+

@@ -1,0 +1,26 @@
+// Alisa 
+-> Aliases are used to temporarily rename a table or a column name.
+For table:
+syntax: SELECT column_name FROM table_name AS alisa_name(nick name);
+
+For column:
+syntax: SELECT column_name AS alisa_name FROM table_name;
+EX:  SELECT name as new_name FROM new;
++----------+
+| new_name |
++----------+
+| Hari     |
+| Ram      |
+| Sita     |
+| testing  |
++----------+
+
+ex:SELECT name "ne name" FROM new;
++---------+
+| ne name |
++---------+
+| Hari    |
+| Ram     |
+| Sita    |
+| testing |
++---------+

@@ -1,0 +1,27 @@
+//ALTER TABLE for adding multiple columns without constraints
+
+1. add more than one column
+Syntax: ALTER TABLE table_name ADD COLUMN column_name datatype(size),
+ADD COLUMN column_name datatype(size);
+ex:
+ select * from new;
++----+---------+
+| id | name    |
++----+---------+
+|  5 | Hari    |
+|  6 | Ram     |
+|  7 | Sita    |
+|  8 | testing |
++----+---------+
+
+
+ex:ALTER TABLE new ADD COLUMN address varchar(50),ADD COLUMN number int (10);
+
++----+---------+---------+--------+
+| id | name    | address | number |
++----+---------+---------+--------+
+|  5 | Hari    | NULL    |   NULL |
+|  6 | Ram     | NULL    |   NULL |
+|  7 | Sita    | NULL    |   NULL |
+|  8 | testing | NULL    |   NULL |
++----+---------+---------+--------+
