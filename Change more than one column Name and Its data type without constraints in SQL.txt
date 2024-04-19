@@ -1,0 +1,20 @@
+//Change more than one column Name and Its data type without constraints in SQL.
+syntax: ALTER TABLE table_name CHANGE COLUMN old_column_name new_column_name new_datatype(size);
+CHANGE COLUMN old_column_name new_column_name new_datatype(size);
+ex: ALTER TABLE new CHANGE COLUMN t_id teacher_id int (10), CHANGE COLUMN
+ id student_id int(10);
+Query OK, 4 rows affected, 2 warnings (0.08 sec)
+Records: 4  Duplicates: 0  Warnings: 2
+
+mysql> desc new;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| teacher_id | int         | YES  |     | NULL    |       |
+| student_id | int         | NO   | PRI | NULL    |       |
+| student    | varchar(20) | YES  |     | NULL    |       |
+| t_number   | int         | YES  | UNI | NULL    |       |
+| address    | varchar(50) | YES  |     | NULL    |       |
+| number     | int         | YES  |     | NULL    |       |
+| s_id       | int         | NO   |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+

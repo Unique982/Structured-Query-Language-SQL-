@@ -1,0 +1,16 @@
+//Delete data of table using Truncate table.
+-> when we only want to delete the data inside the table, and not the table itself.
+syntax: TRUNCATE TABLE table_name;
+ex:select * from student;
++-------------+------+---------+
+| name        | roll | address |
++-------------+------+---------+
+| U'I Testing |  101 | Ktm     |
++-------------+------+---------+
+1 row in set (0.02 sec)
+
+mysql> TRUNCATE TABLE student;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> select * from student;
+Empty set (0.00 sec)

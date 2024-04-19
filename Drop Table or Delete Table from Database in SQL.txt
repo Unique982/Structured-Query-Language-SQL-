@@ -1,0 +1,27 @@
+// Drop Table or Delete Table from Database.
+-> This command is used to delete/remove table from the database;
+syntax: DROP TABLE table_name;
+ex: show tables;
++-----------------+
+| Tables_in_my_db |
++-----------------+
+| new             |
+| staff           |
+| student         |
+| student_rec     |
+| student_reg     |
++-----------------+
+5 rows in set (0.00 sec)
+
+mysql> drop table student_rec;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> show tables;
++-----------------+
+| Tables_in_my_db |
++-----------------+
+| new             |
+| staff           |
+| student         |
+| student_reg     |
++-----------------+

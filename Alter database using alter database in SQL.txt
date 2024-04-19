@@ -1,0 +1,8 @@
+// Alter database using alter database
+Alter database enables you to change the overall characteristics of a database.
+These characteristics are stored in the db.opt file in the database directory. 
+to use ALTER DATABASE, you need the ALTER privilege on the database.
+ALTER SCHEMA is a synonym for ALTER DATABASE.
+The database name can be omitted from the syntax in which case the statemnet
+applies to the default database.
+Syntax: ALTER DATABASE database_name;

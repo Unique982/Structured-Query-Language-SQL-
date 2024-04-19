@@ -1,0 +1,19 @@
+// Change column:
+This is used to change name and data type of an existing column. without constraints
+syntax: ALTER TABLE  table_name CHANGE COLUMN old_column_name new_column_name new data_type(size);
+
+ex: ALTER TABLE new CHANGE COLUMN name student varchar(20);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+mysql> desc new;
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| t_id     | int         | YES  |     | NULL    |                |
+| id       | int         | NO   | PRI | NULL    | auto_increment |
+| student  | varchar(20) | YES  |     | NULL    |                |
+| t_number | int         | YES  | UNI | NULL    |                |
+| address  | varchar(50) | YES  |     | NULL    |                |
+| number   | int         | YES  |     | NULL    |                |
+| s_id     | int         | NO   |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+

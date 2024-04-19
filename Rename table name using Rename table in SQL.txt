@@ -1,0 +1,13 @@
+//Rename table name using Rename table
+-> This command is used to rename one or more table.
+syntax: RENAME TABLE old_table_name to new_table_name;
+ex: RENAME TABLE staff TO emp;
+mysql> show tables;
++-----------------+
+| Tables_in_my_db |
++-----------------+
+| emp             |
+| new             |
+| student         |
+| student_reg     |
++-----------------+

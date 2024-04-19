@@ -1,0 +1,18 @@
+// Change Column name and its Data type with constraint
+Change column with Constraints:-
+syntax: ALTER TABLE table_name CHANGE COLUMN old_column_name new_column new _datetype (size) Constraint_name, 
+ADD Constraint_name (column_name);
+
+ex: ALTER TABLE staff CHANGE COLUMN s_id id int NOT NULL, ADD PRIMARY KEY
+(id);
+Query OK, 1 row affected (0.08 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+mysql> desc staff;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| id     | int         | NO   | PRI | NULL    |       |
+| name   | varchar(50) | YES  |     | NULL    |       |
+| number | int         | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+

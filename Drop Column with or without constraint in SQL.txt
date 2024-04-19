@@ -1,0 +1,14 @@
+//Drop Column with or without constraint
+-> When a column a table need to delete.
+syntax : ALTER TABLE table_name DROP COLUMN column_name;
+ex:ALTER TABLE staff DROP COLUMN number;
+->  desc staff;
++-------+----------+------+-----+---------+-------+
+| Field | Type     | Null | Key | Default | Extra |
++-------+----------+------+-----+---------+-------+
+| id    | int      | NO   | PRI | NULL    |       |
+| name  | char(20) | YES  |     | NULL    |       |
++-------+----------+------+-----+---------+-------+
+
+// When removing constraint from a column.
+syntax: ALTER TABLE table_name DROP constraint_name column_name;

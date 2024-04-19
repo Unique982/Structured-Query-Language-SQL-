@@ -1,0 +1,15 @@
+Modify Column Data Type Its size with or Without Constraint
+-> This is used to modify size of the data type or the data type it self of an existing column without changing column name.
+syntax:ALTER TABLE table_name MODIFY COLUMN column_name datatype(size);
+ex: ALTER TABLE staff MODIFY COLUMN name char(20);
+Query OK, 1 row affected (0.08 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+mysql> desc staff;
++--------+----------+------+-----+---------+-------+
+| Field  | Type     | Null | Key | Default | Extra |
++--------+----------+------+-----+---------+-------+
+| id     | int      | NO   | PRI | NULL    |       |
+| name   | char(20) | YES  |     | NULL    |       |
+| number | int      | YES  |     | NULL    |       |
++--------+----------+------+-----+---------+-------+
