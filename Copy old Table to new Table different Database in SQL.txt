@@ -1,0 +1,8 @@
+// Copy old Table to new Table
+Within different Database
+Use the database where you want to copy the old table
+syntax: CREATE TABLE new_table LIKE old_db.old_table;
+INSERT new_table SELECT * FROM old_db.old_table;
+
+ex: CREATE TABLE teacher LIKE my_db.student;
+INSERT teacher SELECT * FROM my_db.student;

@@ -1,0 +1,4 @@
+Drop database.
+-> The DROP DATABSES statement is used to delete a database.
+syntax: DROP DATABSES database_name;
+ex: DROP DATABASE my_db;

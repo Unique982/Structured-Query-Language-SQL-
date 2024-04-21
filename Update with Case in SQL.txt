@@ -1,0 +1,24 @@
+// Update with case
+synatx: UPDARE table_name SET new_column = CASE
+WHEN column_name1 = some_value1 THEN new_value1
+WHEN column_name2 = some_value2 THEN new_value2
+ELSE new_value3 END;
+ex: UPDATE student_reg SET result = CASE
+    -> WHEN marks >= 450 Then 'FIRST'
+    -> WHEN marks < 450 AND marks >=300 THEN 'SECOND'
+    -> WHEN marks < 300 AND marks >= 200 ThEN 'THIRD'
+    -> ELSE 'Fail' END;
+Query OK, 6 rows affected (0.01 sec)
+Rows matched: 6  Changed: 6  Warnings: 0
+
+mysql> select * from student_reg;
++------+---------+---------+------------+-----------+------+--------+-------+
+| s_id | name    | address | dob        | fees      | id   | result | marks |
++------+---------+---------+------------+-----------+------+--------+-------+
+|  101 | RAM     | KTM     | 1998-12-15 | 100000.23 | 1001 | SECOND |   300 |
+|  102 | SITA    | KTM     | 2001-10-11 | 200000.12 | NULL | SECOND |   400 |
+|  103 | HARI    | PKR     | 2001-01-12 |  10000.52 | NULL | FIRST  |   450 |
+|  104 | BIMAl   | KTM     | NULL       | 100200.00 | NULL | THIRD  |   250 |
+|  105 | KAMAL   | PKR     | 1956-12-12 | 100000.12 | NULL | Fail   |   150 |
+|  106 | SITA KC | PKR     | 1998-02-02 |  20000.12 | NULL | SECOND |   340 |
++------+---------+---------+------------+-----------+------+--------+-------+

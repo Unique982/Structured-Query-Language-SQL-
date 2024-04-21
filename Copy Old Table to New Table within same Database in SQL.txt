@@ -1,0 +1,5 @@
+// Copy Old Table to New Table within same Database.
+Within same Database 
+Syntax: CREATE TABLE new_table LIKE old_table;
+INSERT new_table SELECT * FROM old_table;
+ex: CREATE TABLE emp Like staff; INSERT emp SELECT * FROM staff;

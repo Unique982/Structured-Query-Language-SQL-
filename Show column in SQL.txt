@@ -1,0 +1,12 @@
+// Show columns
+It shows all the columns of table and their data type along with any other columns
+specific details. it is just like DESC table_name.
+syntax: SHOW COLUMNS FROM table_name;
+ex: show columns from student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(20) | YES  |     | NULL    |       |
+| roll    | int         | YES  |     | NULL    |       |
+| address | varchar(20) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
