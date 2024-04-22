@@ -1,0 +1,51 @@
+// Min and max Function
+MIN (column_name) -> Smallest value of the selected column.
+MAX (column_name) -> Largest value of the selected column.
+SUM (column_name) -> The total sum of numeric column.
+AVG(column_name) -> The average value of a numeric column.
+SQRT (colum_name) -> The square root of a numeric column.
+ROUND(column_name,decimal) -> function is used to round a numeric field to the number of decimals specified.
+
+// Min
+Ex: SELECT MIN(marks) FROM student_reg;
++------------+
+| MIN(marks) |
++------------+
+|        250 |
++------------+
+
+// MAX
+ex:SELECT MAX(marks) FROM student_reg;
++------------+
+| MAX(marks) |
++------------+
+|        450 |
++------------+
+
+//sum 
+SELECT SUM(fees) FROM student_reg;
++-----------+
+| SUM(fees) |
++-----------+
+| 430200.99 |
++-----------+
+
+// AVG
+ex: SELECT AVG(fees) FROM student_reg;
++--------------+
+| AVG(fees)    |
++--------------+
+| 86040.198000 |
++--------------+
+
+// SQRT
+SELECT fees, SQRT(fees) FROM student_reg;
++-----------+--------------------+
+| fees      | SQRT(fees)         |
++-----------+--------------------+
+| 100000.23 | 316.22812967855975 |
+| 200000.12 | 447.21372966401645 |
+|  10000.52 | 100.00259996620088 |
+| 100200.00 | 316.54383582688826 |
+|  20000.12 | 141.42178050074182 |
++-----------+--------------------+

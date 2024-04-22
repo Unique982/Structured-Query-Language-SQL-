@@ -1,0 +1,24 @@
+// decimal
+-> Syntax: column_name DECIMAL (T,D);
+where
+T = Total digits. Range 1-65
+D= digits after decimal. Range 0-30 and must not be more than T.
+
+Ex: price DECIMAL(5,2)
+     1234.12
+     DEC,NUMERIC,FIXED
+
+1. Column_name DECIMAL (T,D)
+-T = Total digits. Range 1-65.
+-D = digits after decimal. Range 0-30 and must not be more than T.
+
+2.Column_name DECIMAL (T);
+3. Column_name DECIMAL (T,0);
+4. column_name DECIMAL;
+  -default T = 10;
+  
+syntax: CREATE TABLE product(id int AUTO_INCREMENT PRIMARY KEY, pname varchar(50),price DECIMAL(4,2));
+ex: INSERT INTO product('computer',123.22);
+
+// Zerofill
+CREATE TABLE product(id int AUTO_INCREMENT PRIMARY KEY, pname varchar(50), price DECIMAL(5,4) ZEROFILL);

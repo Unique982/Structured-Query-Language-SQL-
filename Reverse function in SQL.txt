@@ -1,0 +1,12 @@
+//REVERSE function()
+.-> REVERSE(column_name) -> It reverse the order of letter in string.
+ex: SELECT name, REVERSE (name) from student_reg;
++---------+----------------+
+| name    | REVERSE (name) |
++---------+----------------+
+| RAM     | MAR            |
+| SITA    | ATIS           |
+| HARI    | IRAH           |
+| BIMAl   | lAMIB          |
+| SITA KC | CK ATIS        |
++---------+----------------+

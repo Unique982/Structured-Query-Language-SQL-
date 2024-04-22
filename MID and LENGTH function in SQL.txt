@@ -1,0 +1,23 @@
+// MID and LENGTH function 
+ .->MID(column_name,start,length) or SUBSTRING (column_name,start,lenght) -> Function is used to extract characters from a text field.
+ex:  SELECT name, MID(name,2,4) from student_reg;
++---------+---------------+
+| name    | MID(name,2,4) |
++---------+---------------+
+| RAM     | AM            |
+| SITA    | ITA           |
+| HARI    | ARI           |
+| BIMAl   | IMAl          |
+| SITA KC | ITA           |
++---------+---------------+
+.-> LENGTH(column_name)-> the length of the value in a text field.
+ex:  SELECT name, LENGTH(name) from student_reg;
++---------+--------------+
+| name    | LENGTH(name) |
++---------+--------------+
+| RAM     |            3 |
+| SITA    |            4 |
+| HARI    |            4 |
+| BIMAl   |            5 |
+| SITA KC |            7 |
++---------+--------------+

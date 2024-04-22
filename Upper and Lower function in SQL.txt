@@ -1,0 +1,27 @@
+// Upper and Lower function 
+.-> UPPER(column_name) or UCASE(column_name) -> Converts the value of a filed to uppercase.
+.-> Lower(column_name) or LCASE(column_name) -> Converts the value of a file to lowercase.
+
+// UPPER CASE
+ex: SELECT UPPER(name) from student_reg;
++-------------+
+| UPPER(name) |
++-------------+
+| RAM         |
+| SITA        |
+| HARI        |
+| BIMAL       |
+| SITA KC     |
++-------------+
+
+// LOWER CASE
+ex:SELECT LOWER(name) from student_reg;
++-------------+
+| LOWER(name) |
++-------------+
+| ram         |
+| sita        |
+| hari        |
+| bimal       |
+| sita kc     |
++-------------+

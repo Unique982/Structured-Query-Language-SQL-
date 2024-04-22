@@ -1,0 +1,28 @@
+// COUNT()
+-> The COUNT(column_name) Function returns the number of values (NULL) values will not
+be counted of the specified ciolumn:
+ex: SELECT COUNT(column_name) FROM table_name;
+output: SELECT COUNT(s_id) FROM student_reg;
++-------------+
+| COUNT(s_id) |
++-------------+
+|           5 |
++-------------+
+
+Count(*) function returns the number of records in a table.
+ex: SELECT COUNT(column_name) FROM table_name;
+output: SELECT COUNT(*) FROM student_reg;
++----------+
+| COUNT(*) |
++----------+
+|        5 |
++----------+
+
+The COUNT(DISTINCT Column_name) function returns the number of distinct values of the specified column.
+SELECT COUNT(DISTINCT column_name) FROM table_name;
+ex:SELECT COUNT(DISTINCT s_id) FROM student_reg;
++----------------------+
+| COUNT(DISTINCT s_id) |
++----------------------+
+|                    5 |
++----------------------+

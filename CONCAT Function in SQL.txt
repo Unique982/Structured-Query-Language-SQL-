@@ -1,0 +1,15 @@
+// CONCAT()
+(column_name1,column_name2)-> IT joints two column.
+.-> FORMAT(column_name,format_type) -> function is used to format how a field is to be displayed.
+
+// CONCAT()
+ex:SELECT name, CONCAT (address,fees) from student_reg;
++---------+-----------------------+
+| name    | CONCAT (address,fees) |
++---------+-----------------------+
+| RAM     | KTM100000.23          |
+| SITA    | KTM200000.12          |
+| HARI    | PKR10000.52           |
+| BIMAl   | KTM100200.00          |
+| SITA KC | PKR20000.12           |
++---------+-----------------------+
