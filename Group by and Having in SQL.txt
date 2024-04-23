@@ -1,0 +1,21 @@
+// Group By
+ex: SELECT name, MIN(fees) FROM student_reg GROUP BY name;
++---------+-----------+
+| name    | MIN(fees) |
++---------+-----------+
+| RAM     | 100000.23 |
+| SITA    | 200000.12 |
+| HARI    |  10000.52 |
+| BIMAl   | 100200.00 |
+| SITA KC |  20000.12 |
++---------+-----------+
+
+Having
+ex:SELECT name, MIN(fees) FROM student_reg GROUP BY name HAVING MIN(fees) >100000;
++-------+-----------+
+| name  | MIN(fees) |
++-------+-----------+
+| RAM   | 100000.23 |
+| SITA  | 200000.12 |
+| BIMAl | 100200.00 |
++-------+-----------+
