@@ -1,0 +1,37 @@
+// Foreign key
+.-> A FOREIGN KEY is one table points to a PRIMARY KEY in another table.
+.-> A foreign key can have a different name than the primary key it comes from.
+.-> The primary key used by a foreign key is also known as aparent key. The table where the 
+primary key is from is known as a parent table.
+.-> The foreign key can be used to make sure that the row in one table have corresponding row in anothe table.
+.-> Foreign key value can be null, even though primary key value can't.
+.-> FOREIGN KEY don't have to be unique in fact they often aren't.
+
+//Create Table with Foreign Key 
+syntax: CREATE TABLE staff (s_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, s_name VARCHAR(50) ,emp_id INT NOT NULL, FOREIGN KEY (emp_id) REFERENCES emp(e_id));
+ desc staff;
++--------+-------------+------+-----+---------+----------------+
+| Field  | Type        | Null | Key | Default | Extra          |
++--------+-------------+------+-----+---------+----------------+
+| s_id   | int         | NO   | PRI | NULL    | auto_increment |
+| s_name | varchar(50) | YES  |     | NULL    |                |
+| emp_id | int         | NO   | MUL | NULL    |                |
++--------+-------------+------+-----+---------+----------------+
+.-> The CONSTRAINT clause allows to define constraint name for the foreign key constraint. if we 
+omit it, MYSQL will generate a name automatically. it is optional.
+.-> The REFERENCES clause specifies the parent table and its columns to which the columns in the
+child table refer. The number of columns in the child table and parent table specified in the FOREING 
+KEY and REFERENCES must be the same.
+
+//How to find Constraint Name in SQl
+ex:-  select * from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE TABLE_NAME =
+'staff';
++--------------------+-------------------+------------------+--------------+------------+-----------------+----------+
+| CONSTRAINT_CATALOG | CONSTRAINT_SCHEMA | CONSTRAINT_NAME  | TABLE_SCHEMA | TABLE_NAME | CONSTRAINT_TYPE | ENFORCED |
++--------------------+-------------------+------------------+--------------+------------+-----------------+----------+
+| def                | my_db             | PRIMARY          | my_db        | staff      | PRIMARY KEY     | YES      |
+| def                | my_db             | staff_ibfk_1     | my_db        | staff      | FOREIGN KEY     | YES      |
++--------------------+-------------------+------------------+--------------+------------+-----------------+----------+
+
+//DROP FOREIGN KEY From Table
+ex: ALTER TABLE staff DROP FOREIGN KEY staff_ibfk_1;
