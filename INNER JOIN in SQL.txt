@@ -1,0 +1,61 @@
+INNER JOIN
+-> An INNER JOIN is a cross JOIN with some result rows removed by a condition in the query.
+.-> EQUIJOIN
+.->NON-EQUIJOIN
+.->NATURAL JOIN
+1.EQUIJOIN
+ex:select new.student,student_reg.name from new INNER JOIN student_reg ON new.s_id = new.s_id;
++---------+---------+
+| student | name    |
++---------+---------+
+| testing | RAM     |
+| Sita    | RAM     |
+| Ram     | RAM     |
+| Hari    | RAM     |
+| testing | SITA    |
+| Sita    | SITA    |
+| Ram     | SITA    |
+| Hari    | SITA    |
+| testing | HARI    |
+| Sita    | HARI    |
+| Ram     | HARI    |
+| Hari    | HARI    |
+| testing | BIMAl   |
+| Sita    | BIMAl   |
+| Ram     | BIMAl   |
+| Hari    | BIMAl   |
+| testing | SITA KC |
+| Sita    | SITA KC |
+| Ram     | SITA KC |
+| Hari    | SITA KC |
++---------+---------+
+
+2.NON-EQUIJOIN
+ex: select student_reg.name,new.student from student_reg INNER JOIN new ON student_reg.s_id<>new.s_id;
++---------+---------+
+| name    | student |
++---------+---------+
+| RAM     | testing |
+| RAM     | Sita    |
+| RAM     | Ram     |
+| RAM     | Hari    |
+| SITA    | testing |
+| SITA    | Sita    |
+| SITA    | Ram     |
+| SITA    | Hari    |
+| HARI    | testing |
+| HARI    | Sita    |
+| HARI    | Ram     |
+| HARI    | Hari    |
+| BIMAl   | testing |
+| BIMAl   | Sita    |
+| BIMAl   | Ram     |
+| BIMAl   | Hari    |
+| SITA KC | testing |
+| SITA KC | Sita    |
+| SITA KC | Ram     |
+| SITA KC | Hari    |
++---------+---------+
+
+3. NATURAL JOIN
+ex:select column_name FROM table1 NATURAL JOIN table2;

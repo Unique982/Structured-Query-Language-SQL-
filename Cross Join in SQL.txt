@@ -1,0 +1,30 @@
+Cross JOIN/Cartesian Join/ Cartesian Product/Cross Product
+-> The cross join returns every row from one table crossed with every row from the second.
+syntax: SELECT * FROM emp CROSS JOIN student;
+ :SELECT name,sname FROM emp CROSS JOIN student;
+
+ ex:select name, dob from student_reg, new;
++---------+------------+
+| name    | dob        |
++---------+------------+
+| RAM     | 1998-12-15 |
+| RAM     | 1998-12-15 |
+| RAM     | 1998-12-15 |
+| RAM     | 1998-12-15 |
+| SITA    | 2001-10-11 |
+| SITA    | 2001-10-11 |
+| SITA    | 2001-10-11 |
+| SITA    | 2001-10-11 |
+| HARI    | 2001-01-12 |
+| HARI    | 2001-01-12 |
+| HARI    | 2001-01-12 |
+| HARI    | 2001-01-12 |
+| BIMAl   | NULL       |
+| BIMAl   | NULL       |
+| BIMAl   | NULL       |
+| BIMAl   | NULL       |
+| SITA KC | 1998-02-02 |
+| SITA KC | 1998-02-02 |
+| SITA KC | 1998-02-02 |
+| SITA KC | 1998-02-02 |
++---------+------------+
