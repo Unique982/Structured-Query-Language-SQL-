@@ -1,0 +1,6 @@
+// RIGHT OUTER JOIn/RIGHT JOIN
+-> The RIGHT JOIN keyword returns all rows from the right table, with the matching rows in the left table.
+The result is NULL in the left side when there is no match.
+syntax: SELECT student_reg.name,teacher.name FROM student_reg
+RIGHT JOIN teacher ON student_reg.s_id = teacher.t_id;
+

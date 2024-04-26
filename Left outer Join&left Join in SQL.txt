@@ -1,0 +1,16 @@
+//LEFT OUTER JOIN / LEFT JOIN
+->The LEFT JOIN keyword returns all rows from the left table, with the matching rows in the 
+right table. The result is NULL in the right side when there is no match.
+In a LEFT OUTER JOIN the table that comes before the join is the left table,
+and the table that comes after join is the right table.
+
+Syntax: SELECT column_name FROM table1 LEFT JOIN table2 ON column_name = column_name;
+ex: SELECT teacher.t_name,student_reg.address FROM teacher
+    -> LEFT JOIN student_reg ON teacher.t_id = student_reg.s_id;
++--------+---------+
+| t_name | address |
++--------+---------+
+| Raju   | NULL    |
+| Gita   | NULL    |
++--------+---------+
+(no record address)

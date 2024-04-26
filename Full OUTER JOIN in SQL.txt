@@ -1,0 +1,7 @@
+Full OUTER JOIN in SQL
+-> The FULL OUTER JOIN returns all rows from the left table and from the right table.
+The full outer join combines the result of both LEFT and RIGHT joins.
+syntax: SELECR column_name FROM table1
+FULL JOIN table2
+ON column_name = column_name;
+

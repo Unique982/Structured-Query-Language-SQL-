@@ -1,0 +1,8 @@
+// INTERESCT
+-> INTERSECT returns only those columns that are the frist query and also in the second query.
+syntax: SELECT name FROM Student INTERSECT 
+SELECT name FROM Emp;
+
+// EXCEPT
+-> EXCEPT returns only those columns that are in the first query but not in the second query.
+SELECT name FROM Student EXCEPT SELECT name FROM empl;

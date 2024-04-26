@@ -1,0 +1,14 @@
+// UNION 
+-> A UNION combines the results of two or more quires into one table.
+Rules:
+.-> The number of column in each SELECT statement must match.
+.-> The data types in the columns should be same.
+.-> The columns in each SELECT statement must be in the same order.
+.-> Must have the same expressions and aggreate function in each SELECT statement
+.-> The UNION operator selects only distinct value by default and it doesn't select duplicate values.
+ex:SELECT name from student UNION SELECT name From employee;
+
+// UNION all
+-> UNION ALL returns every match whether it is duplicate or distinct ones.
+syntax: SELECT name FROM STUDENT UNION ALL SELECT name FROM empl;
+
