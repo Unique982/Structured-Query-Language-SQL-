@@ -16,7 +16,7 @@
 
  6. Relational Database Management System (RDBMS)
  -> RDBMS avoided the navigation model as in old DBMS and introduced relational model.
- The realtional model has relationship between tables using primary keys,foreign keys indexes.
+ The relational model has relationship between tables using primary keys,foreign keys indexes.
  Thus the fetching and storing of data become faster than the old navigational model.
  RDBMS is useful to efficiently manage vast amonut of data and is used in large business application
 
